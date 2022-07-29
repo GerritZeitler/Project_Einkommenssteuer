@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1632927355333-e4c1772fb714?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+fieldset {
+    border: 0;
+    background-color: rgba(211, 211, 211, 0.729);
+}
+
+.form {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+}
+
+fieldset {
+    margin: 0 auto;
+    align-content: center;
+    width: 400px;
+}
+
+article {
+    padding: 20px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+label {
+    font-weight: 600;
+}
+
+
+#jahr {
+    text-align: right;
+}
+
+#einkommen {
+    text-align: right;
+    width: 70px;
+}
+
+::placeholder {
+    text-align: end;
+}
+
+.splittung {
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#berechnunggesamt>h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#berechnunggesamt>section>h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#berechnunggesamt>section>p {
+    display: flex;
+    justify-content: space-between;
+}

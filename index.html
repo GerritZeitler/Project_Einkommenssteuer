@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommenssteuer Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="form"></section>
+    <h1>Berechnung der Einkommenssteuer</h1>
+    <fieldset>
+
+        <form action="" onsubmit="return false"></form>
+
+        <article>
+            <div>
+                <label for="Zu versteuerndes Einkommen">Steuerjahr</label>
+                <select name="jahr" id="jahr">
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                </select>
+            </div>
+            <div>
+                <label for="Zu versteuerndes Einkommen">Zu versteuerndes Einkommen</label>
+                <input type="tel" name="Einkommen" id="einkommen" placeholder="0 €">
+            </div>
+            <div>
+                <label for="Kirchensteuer">Kirchensteuer</label>
+                <select name="jahr" id="jahr">
+                    <option value="Ja">9%</option>
+                    <option value="Nein">NEIN</option>
+                </select>
+            </div>
+            <div>
+                <label for="Ehegattensplittung">Ehegattensplittung</label>
+                <div class="splittung">
+                    <label for="ja">Ja</label>
+                    <input type="radio" id="split1" name="ehegattensplittung" value="Ja">
+                    <label for="nein">Nein</label>
+                    <input type="radio" id="split2" name="ehegattensplittung" value="Nein" checked="checked">
+                </div>
+            </div>
+
+            <div class="submit">
+                <button onclick="calculate1()">Berechnen</button>
+            </div>
+            <section id="berechnunggesamt">
+
+                <section>
+                    <div>
+                        <h3>= Netto gesamt</h3>
+                        <h3><span id="estgesamt"></span>€</h3>
+                    </div>
+
+                </section>
+            </section>
+        </article>
+    </fieldset>
+    </section>
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
